@@ -1,0 +1,34 @@
+# Dependencies and caches
+node_modules/
+.venv/
+.uv-cache/
+.npm-cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration; publish only the empty example
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime state, media, builds and personal materials
+/data/
+/interview/
+/frontend/dist/
+/dist/
+/build/
+*.sqlite*
+*.db
+*.log
+.DS_Store
+
+# Local raw acceptance evidence; summaries and source manifests stay versioned
+/docs/evidence/
+/docs/task-free-runtime-evidence/
+/docs/skill-migration/sdk-acceptance-evidence/

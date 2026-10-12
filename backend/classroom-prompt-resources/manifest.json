@@ -1,0 +1,34 @@
+{
+  "director.md": {
+    "source": "lib/prompts/templates/director/system.md",
+    "sha256": "2824448960a7d62db99ec8f7bd42262f8ee83a0de24b4e2de3d75f3fb0a4338b"
+  },
+  "agent-system.original.md": {
+    "source": "lib/prompts/templates/agent-system/system.md",
+    "sha256": "7da837b795d1d6bb6d3cbc029c3323ef2700384ddacf93ad8b1af4ab8e8ae63e"
+  },
+  "speech-guidelines.original.md": {
+    "source": "lib/prompts/snippets/speech-guidelines.md",
+    "sha256": "3b26f36bd931cc02e28eb9af8e64ced70916bee342597e73eb1a0c51532075fd"
+  },
+  "teacher.original.md": {
+    "source": "lib/orchestration/registry/store.ts",
+    "agentId": "default-1",
+    "sha256": "2992f58b33b5dadbb33e66de124db6d8fbf848322f7196a6f01655ad55bbcf52"
+  },
+  "curious.original.md": {
+    "source": "lib/orchestration/registry/store.ts",
+    "agentId": "default-4",
+    "sha256": "b523186b3046571feda700e27c0fd1ff03d160b0e00382df29b24b0969e52c87"
+  },
+  "notetaker.original.md": {
+    "source": "lib/orchestration/registry/store.ts",
+    "agentId": "default-5",
+    "sha256": "72611af3351fa4c205715badb29d37320e754cc42e726bdd17b45e08ba76e31d"
+  },
+  "thinker.original.md": {
+    "source": "lib/orchestration/registry/store.ts",
+    "agentId": "default-6",
+    "sha256": "1ec34e46d1f6f3bfe5d666cd2285d3f19a6b67c75ad12d42cccb3d114966d472"
+  }
+}

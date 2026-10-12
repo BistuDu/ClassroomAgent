@@ -1,0 +1,897 @@
+{
+  "index": {
+    "version": "9dae46824eedd76d42e3916cbefc3507f014751679e6f54cf73784b029496336",
+    "skills": [
+      {
+        "skillId": "deep-interactive",
+        "title": "深度交互",
+        "command": "/deep-interactive",
+        "bodyHash": "bff6f6abd51246f077811c1a3bb18f6a3a51ed296e2b0da33ada165dd3d912c3",
+        "bodyBytes": 961,
+        "description": "深度交互：操控变量、预测与观察机制，当前只支持真实数值模拟。",
+        "path": "deep-interactive/SKILL.md",
+        "version": "8216cda14b1684208231d9903bb3d76c22db70bbb9c8b3b4555fa31514d2f2ce",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "deep-research",
+        "title": "深度调研",
+        "command": "/deep-research",
+        "bodyHash": "b25d676f1da4fb57ff5b0880f4c905156d7ee82cb8cf8b05f0e4c1a53b7f5165",
+        "bodyBytes": 7951,
+        "description": "先取证再方案：问题、来源台账、时效和冲突，使用真实web_search/fetch_url和sourceId，不用于研究表演。",
+        "path": "deep-research/SKILL.md",
+        "version": "77a8c438b966c146215cdfe93dfcc19be850a638d2f4ba00660b8c30d218b665",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "fact-check",
+        "title": "事实核查",
+        "command": "/fact-check",
+        "bodyHash": "a473dc3b633ac8d3370db9b4ef533c2c5eb61597523cc14a47e61f4fa61fb0f4",
+        "bodyBytes": 7834,
+        "description": "针对高价值事实核查，已有课先报告证据并选择修改，保护批准输入，不替代程序/视觉检查。",
+        "path": "fact-check/SKILL.md",
+        "version": "c5f3db1a8d450493049818b2b5b09a9a4fe02fc957c9a8ff41d1f9ffc3d8e7aa",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "feynman-learning",
+        "title": "费曼学习法",
+        "command": "/feynman-learning",
+        "bodyHash": "15f0234ae7da55ac1d2bf8e6d2a3f6de76f00f8196fa1720bad1785df625bc65",
+        "bodyBytes": 8241,
+        "description": "费曼循环：先解释、最小缺口、追问重建、去术语、类比边界和迁移，不把学习法科普当实际循环。",
+        "path": "feynman-learning/SKILL.md",
+        "version": "3aa13db5c33b84201005cc76d671b41d6d4752bc727ef148eff5b423806c4431",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "k12-core-literacy-planning",
+        "title": "核心素养教学设计",
+        "command": "/k12-core-literacy-planning",
+        "bodyHash": "229fe9d994cdf972297bc33711f705a1fcd3c9f28928512cc43c98558841e05e",
+        "bodyBytes": 8679,
+        "description": "中小学核心素养单课设计：情境、任务、证据与迁移，按需读取学科和学段参考。",
+        "path": "k12-core-literacy-planning/SKILL.md",
+        "version": "394390618561ece6e48b145e0c3c469ddc509347cfd7d8bf76adfd1119f857fc",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "learning-to-learn",
+        "title": "学会学习（Learning to Learn）",
+        "command": "/learning-to-learn",
+        "bodyHash": "b72d6ea18e438190b149f020df299bc14b2c236df25b540d4f69b2871356728e",
+        "bodyBytes": 4641,
+        "description": "学会学习作为学科平行目标：检索、自我解释、预测后反馈和理解监控，不替换学科主线。",
+        "path": "learning-to-learn/SKILL.md",
+        "version": "01e67bdf4f2adc324c36d9ab5693171b75d694a62c672b6f388b23eb5522aaac",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "lecture-style",
+        "title": "大师讲授",
+        "command": "/lecture-style",
+        "bodyHash": "3deb1ca0c7eab22904c489f23e71978f7e55b60d98ec1e0b0ffbe907602bd7f5",
+        "bodyBytes": 1436,
+        "description": "大师讲授：连贯论证弧、真实案例和稀疏检查点，适合系统讲解，不用于动手训练。",
+        "path": "lecture-style/SKILL.md",
+        "version": "1b5e333ef99314ac7230daa6f6969e43130c8541746219995be88397f5d7dc08",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "pro-editing",
+        "title": "专业编辑",
+        "command": "/pro-editing",
+        "bodyHash": "cdf7c79e5cd57e2e0ef8be83d37a5316e8606c72356cda6dce54c62b70450a34",
+        "bodyBytes": 3211,
+        "description": "读后最小编辑，区分课程元数据、目录和单页内容，保留稳定ID与成果。",
+        "path": "pro-editing/SKILL.md",
+        "version": "fffe6ff54cdd40f190279e8ab2fb9f41250d2811e23a37f9ff2210b576370456",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "slide-craft",
+        "title": "页面设计",
+        "command": "/slide-craft",
+        "bodyHash": "eeea9f47a1f1509ff4b29bf4de997652678a5fdcbaeade5f4656f0468c0581bd",
+        "bodyBytes": 2052,
+        "description": "幻灯片视觉重心、信息精简、层次、间距、对比与真实图表/媒体。",
+        "path": "slide-craft/SKILL.md",
+        "version": "cc206f3d082ab163fd9faef3e1caa149262f474c2146ce5918a0e676703c4c90",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "slide-dsl",
+        "title": "页面数据结构",
+        "command": "/slide-dsl",
+        "bodyHash": "19b0e05cd9d6feaf864dc1d21d24976f05a74d79d6f7301343d13070251a5ce6",
+        "bodyBytes": 1627,
+        "description": "Python七种元素字段、纯文本、图表、公式、mediaId和稳定目标编辑参考。",
+        "path": "slide-dsl/SKILL.md",
+        "version": "1fe6d445b5e4196fa57b656ebef355cabb954c33f08c6128a2ba3097ef62d57f",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "social-emotional-learning",
+        "title": "社会情感学习（SEL）",
+        "command": "/social-emotional-learning",
+        "bodyHash": "562a47a6c58fb6878f56f5563b3e013decbf08bb577ca422fa49518b5f400249",
+        "bodyBytes": 3866,
+        "description": "SEL作为学科平行目标：情绪觉察、自我管理、同理和协作，不作为心理诊断。",
+        "path": "social-emotional-learning/SKILL.md",
+        "version": "aeecd7cd2c3c9988c37069fbb1bdbacb68e42c1ffae7b0839aa507ac1245ff5a",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "stage-design",
+        "title": "课堂设计",
+        "command": "/stage-design",
+        "bodyHash": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e",
+        "bodyBytes": 2459,
+        "description": "课程方案、批准、逐页制作及真实完成检查，适用于新课设计与完善已有课。",
+        "path": "stage-design/SKILL.md",
+        "version": "ecfe5b141ab99ca4133f383b235aecd77c50e7c808a0f11e8be78583a75335e2",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "stage-dsl",
+        "title": "课堂文档结构",
+        "command": "/stage-dsl",
+        "bodyHash": "5769aeb63fd589c6f0ed9240c7751933f1566b02ba7300cf4b8a0abbca3c43e2",
+        "bodyBytes": 1078,
+        "description": "Python课程文档定位及actions/quiz/simulation受限参考，读取和编辑路径。",
+        "path": "stage-dsl/SKILL.md",
+        "version": "83ee002fc45ebc0003ab39798f7e51ba2d791fb7851337303a860213243f8c1b",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "understanding-by-design",
+        "title": "理解本位设计（UbD）",
+        "command": "/understanding-by-design",
+        "bodyHash": "147a3eec6a0eefa7c7b5382c4a1c6eadb909e5bfbbb2f68053c8c0b508d29a71",
+        "bodyBytes": 4306,
+        "description": "理解本位单课设计：持久理解、基本问题、GRASPS证据和WHERETO经历，不提供系列创建。",
+        "path": "understanding-by-design/SKILL.md",
+        "version": "1e6d95efd09cd8acbea8cdf599cfb73eea8ae27bf60a2de1227f2d4610aeb467",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "workshop-style",
+        "title": "互动工作坊",
+        "command": "/workshop-style",
+        "bodyHash": "677b279bb8433932bf3ff1efafabd97082bc5454672741529dfd68b0d0fd581a",
+        "bodyBytes": 1381,
+        "description": "互动工作坊：概念→动手→反馈→综合任务，短句引导，适合实操，不用于纯知识叙述。",
+        "path": "workshop-style/SKILL.md",
+        "version": "99b5686e29743e7c1b7393872ef446557fd7cc7f0d966bbe72e3ce2a97ee7266",
+        "disableModelInvocation": false
+      },
+      {
+        "skillId": "zone-of-proximal-development",
+        "title": "习题课（最近发展区）",
+        "command": "/zone-of-proximal-development",
+        "bodyHash": "e08b0c8b77d7249fd3a061b18f5651c802679fba4d8d9359ddc5e16706587c3e",
+        "bodyBytes": 10918,
+        "description": "基于真实独立表现提供支架，再撤架复核，按需读取理论/习题课，不凭自报或一次错答贴标签。",
+        "path": "zone-of-proximal-development/SKILL.md",
+        "version": "40a2f129fecf60696da4d1e67646846187b8c5c334e2294b125ccaddcd9c1c23",
+        "disableModelInvocation": false
+      }
+    ],
+    "diagnostics": [],
+    "changes": {
+      "added": [
+        "deep-interactive",
+        "deep-research",
+        "fact-check",
+        "feynman-learning",
+        "k12-core-literacy-planning",
+        "learning-to-learn",
+        "lecture-style",
+        "pro-editing",
+        "slide-craft",
+        "slide-dsl",
+        "social-emotional-learning",
+        "stage-design",
+        "stage-dsl",
+        "understanding-by-design",
+        "workshop-style",
+        "zone-of-proximal-development"
+      ],
+      "removed": [],
+      "changed": []
+    },
+    "legacyReads": {
+      "course-authoring": {
+        "canonicalId": "stage-design",
+        "path": "SKILL.md",
+        "bodyHash": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e",
+        "bodyBytes": 2459,
+        "skillVersion": "ecfe5b141ab99ca4133f383b235aecd77c50e7c808a0f11e8be78583a75335e2"
+      },
+      "course": {
+        "canonicalId": "stage-design",
+        "path": "SKILL.md",
+        "bodyHash": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e",
+        "bodyBytes": 2459,
+        "skillVersion": "ecfe5b141ab99ca4133f383b235aecd77c50e7c808a0f11e8be78583a75335e2"
+      },
+      "slide-design": {
+        "canonicalId": "slide-craft",
+        "path": "SKILL.md",
+        "bodyHash": "eeea9f47a1f1509ff4b29bf4de997652678a5fdcbaeade5f4656f0468c0581bd",
+        "bodyBytes": 2052,
+        "skillVersion": "cc206f3d082ab163fd9faef3e1caa149262f474c2146ce5918a0e676703c4c90"
+      },
+      "slides": {
+        "canonicalId": "slide-craft",
+        "path": "SKILL.md",
+        "bodyHash": "eeea9f47a1f1509ff4b29bf4de997652678a5fdcbaeade5f4656f0468c0581bd",
+        "bodyBytes": 2052,
+        "skillVersion": "cc206f3d082ab163fd9faef3e1caa149262f474c2146ce5918a0e676703c4c90"
+      },
+      "interactive-simulation": {
+        "canonicalId": "stage-dsl",
+        "path": "references/simulation.md",
+        "bodyHash": "42ce29acba3232829d5bacc8cef371dcf9b951cddaf0256ab2e4874987f0c2ca",
+        "bodyBytes": 2649,
+        "skillVersion": "83ee002fc45ebc0003ab39798f7e51ba2d791fb7851337303a860213243f8c1b"
+      },
+      "simulation": {
+        "canonicalId": "stage-dsl",
+        "path": "references/simulation.md",
+        "bodyHash": "42ce29acba3232829d5bacc8cef371dcf9b951cddaf0256ab2e4874987f0c2ca",
+        "bodyBytes": 2649,
+        "skillVersion": "83ee002fc45ebc0003ab39798f7e51ba2d791fb7851337303a860213243f8c1b"
+      },
+      "narration-actions": {
+        "canonicalId": "stage-dsl",
+        "path": "references/actions.md",
+        "bodyHash": "ba1da1f90c0b6946fb4e5b9257da961778d928c807cb8e5950a824b79187e31c",
+        "bodyBytes": 2262,
+        "skillVersion": "83ee002fc45ebc0003ab39798f7e51ba2d791fb7851337303a860213243f8c1b"
+      },
+      "narration": {
+        "canonicalId": "stage-dsl",
+        "path": "references/actions.md",
+        "bodyHash": "ba1da1f90c0b6946fb4e5b9257da961778d928c807cb8e5950a824b79187e31c",
+        "bodyBytes": 2262,
+        "skillVersion": "83ee002fc45ebc0003ab39798f7e51ba2d791fb7851337303a860213243f8c1b"
+      },
+      "inspection-quality": {
+        "canonicalId": "stage-design",
+        "path": "references/inspection.md",
+        "bodyHash": "516c642ad0a4be6cebd06028d71c1baebe1d3051c5e50c977fa1f6f1b92e495b",
+        "bodyBytes": 2152,
+        "skillVersion": "ecfe5b141ab99ca4133f383b235aecd77c50e7c808a0f11e8be78583a75335e2"
+      },
+      "inspection": {
+        "canonicalId": "stage-design",
+        "path": "references/inspection.md",
+        "bodyHash": "516c642ad0a4be6cebd06028d71c1baebe1d3051c5e50c977fa1f6f1b92e495b",
+        "bodyBytes": 2152,
+        "skillVersion": "ecfe5b141ab99ca4133f383b235aecd77c50e7c808a0f11e8be78583a75335e2"
+      },
+      "quiz-design": {
+        "canonicalId": "stage-dsl",
+        "path": "references/quiz.md",
+        "bodyHash": "01f4471b1b3ab682424ce361babe28ded5190de574c881c99c1959fe4c09f5e2",
+        "bodyBytes": 714,
+        "skillVersion": "83ee002fc45ebc0003ab39798f7e51ba2d791fb7851337303a860213243f8c1b"
+      },
+      "quiz": {
+        "canonicalId": "stage-dsl",
+        "path": "references/quiz.md",
+        "bodyHash": "01f4471b1b3ab682424ce361babe28ded5190de574c881c99c1959fe4c09f5e2",
+        "bodyBytes": 714,
+        "skillVersion": "83ee002fc45ebc0003ab39798f7e51ba2d791fb7851337303a860213243f8c1b"
+      }
+    }
+  },
+  "reads": [
+    {
+      "id": "deep-interactive",
+      "path": "SKILL.md",
+      "pages": 1,
+      "hash": "bff6f6abd51246f077811c1a3bb18f6a3a51ed296e2b0da33ada165dd3d912c3",
+      "reassembledHash": "bff6f6abd51246f077811c1a3bb18f6a3a51ed296e2b0da33ada165dd3d912c3"
+    },
+    {
+      "id": "deep-interactive",
+      "path": "references/structure-guidance.md",
+      "pages": 1,
+      "hash": "7a53149c29ff3d53f11c266a341706763f51a1dafdf767927abe10b060e90a74",
+      "reassembledHash": "7a53149c29ff3d53f11c266a341706763f51a1dafdf767927abe10b060e90a74"
+    },
+    {
+      "id": "deep-research",
+      "path": "SKILL.md",
+      "pages": 8,
+      "hash": "b25d676f1da4fb57ff5b0880f4c905156d7ee82cb8cf8b05f0e4c1a53b7f5165",
+      "reassembledHash": "b25d676f1da4fb57ff5b0880f4c905156d7ee82cb8cf8b05f0e4c1a53b7f5165"
+    },
+    {
+      "id": "deep-research",
+      "path": "references/structure-guidance.md",
+      "pages": 1,
+      "hash": "0bdaa31ea1524315e3bf9b35acc703776c773f2ce3550fa5bfddfa6c07a9d5aa",
+      "reassembledHash": "0bdaa31ea1524315e3bf9b35acc703776c773f2ce3550fa5bfddfa6c07a9d5aa"
+    },
+    {
+      "id": "fact-check",
+      "path": "SKILL.md",
+      "pages": 8,
+      "hash": "a473dc3b633ac8d3370db9b4ef533c2c5eb61597523cc14a47e61f4fa61fb0f4",
+      "reassembledHash": "a473dc3b633ac8d3370db9b4ef533c2c5eb61597523cc14a47e61f4fa61fb0f4"
+    },
+    {
+      "id": "feynman-learning",
+      "path": "SKILL.md",
+      "pages": 4,
+      "hash": "15f0234ae7da55ac1d2bf8e6d2a3f6de76f00f8196fa1720bad1785df625bc65",
+      "reassembledHash": "15f0234ae7da55ac1d2bf8e6d2a3f6de76f00f8196fa1720bad1785df625bc65"
+    },
+    {
+      "id": "k12-core-literacy-planning",
+      "path": "SKILL.md",
+      "pages": 9,
+      "hash": "229fe9d994cdf972297bc33711f705a1fcd3c9f28928512cc43c98558841e05e",
+      "reassembledHash": "229fe9d994cdf972297bc33711f705a1fcd3c9f28928512cc43c98558841e05e"
+    },
+    {
+      "id": "k12-core-literacy-planning",
+      "path": "references/core-literacy.md",
+      "pages": 4,
+      "hash": "47635d06a4a598b28c22a408f5f218e96dd2eca664ca74c1774bb95c848a47ee",
+      "reassembledHash": "47635d06a4a598b28c22a408f5f218e96dd2eca664ca74c1774bb95c848a47ee"
+    },
+    {
+      "id": "k12-core-literacy-planning",
+      "path": "references/subjects/humanities.md",
+      "pages": 2,
+      "hash": "616dfe49b3f8c96c917f81a98d04a23b374f1ec509c6d59ee9874d7656353ccc",
+      "reassembledHash": "616dfe49b3f8c96c917f81a98d04a23b374f1ec509c6d59ee9874d7656353ccc"
+    },
+    {
+      "id": "k12-core-literacy-planning",
+      "path": "references/subjects/languages.md",
+      "pages": 2,
+      "hash": "b88c8350e51ffcaf502ef891e0e69f8351295b550c4fe7202efa595de7327b89",
+      "reassembledHash": "b88c8350e51ffcaf502ef891e0e69f8351295b550c4fe7202efa595de7327b89"
+    },
+    {
+      "id": "k12-core-literacy-planning",
+      "path": "references/subjects/mathematics.md",
+      "pages": 2,
+      "hash": "c6a3867f7eb9546928c7ba08243ac3add5e4ec7a963c745191186565632712b1",
+      "reassembledHash": "c6a3867f7eb9546928c7ba08243ac3add5e4ec7a963c745191186565632712b1"
+    },
+    {
+      "id": "k12-core-literacy-planning",
+      "path": "references/subjects/science.md",
+      "pages": 2,
+      "hash": "2e2e7589fe7798771e69f95bd8222fe0a87ef8f189e8785a0dc90880353e5047",
+      "reassembledHash": "2e2e7589fe7798771e69f95bd8222fe0a87ef8f189e8785a0dc90880353e5047"
+    },
+    {
+      "id": "learning-to-learn",
+      "path": "SKILL.md",
+      "pages": 2,
+      "hash": "b72d6ea18e438190b149f020df299bc14b2c236df25b540d4f69b2871356728e",
+      "reassembledHash": "b72d6ea18e438190b149f020df299bc14b2c236df25b540d4f69b2871356728e"
+    },
+    {
+      "id": "lecture-style",
+      "path": "SKILL.md",
+      "pages": 1,
+      "hash": "3deb1ca0c7eab22904c489f23e71978f7e55b60d98ec1e0b0ffbe907602bd7f5",
+      "reassembledHash": "3deb1ca0c7eab22904c489f23e71978f7e55b60d98ec1e0b0ffbe907602bd7f5"
+    },
+    {
+      "id": "lecture-style",
+      "path": "references/structure-guidance.md",
+      "pages": 1,
+      "hash": "b7b77c208a1c38cea1fa62e145ef66423d301085748bb81b2594f228dde792a8",
+      "reassembledHash": "b7b77c208a1c38cea1fa62e145ef66423d301085748bb81b2594f228dde792a8"
+    },
+    {
+      "id": "pro-editing",
+      "path": "SKILL.md",
+      "pages": 2,
+      "hash": "cdf7c79e5cd57e2e0ef8be83d37a5316e8606c72356cda6dce54c62b70450a34",
+      "reassembledHash": "cdf7c79e5cd57e2e0ef8be83d37a5316e8606c72356cda6dce54c62b70450a34"
+    },
+    {
+      "id": "pro-editing",
+      "path": "references/structure-guidance.md",
+      "pages": 1,
+      "hash": "7a633615c4b4427af1da802d8f8f8510eceb87539e45faeff1d89be1012bd457",
+      "reassembledHash": "7a633615c4b4427af1da802d8f8f8510eceb87539e45faeff1d89be1012bd457"
+    },
+    {
+      "id": "slide-craft",
+      "path": "SKILL.md",
+      "pages": 1,
+      "hash": "eeea9f47a1f1509ff4b29bf4de997652678a5fdcbaeade5f4656f0468c0581bd",
+      "reassembledHash": "eeea9f47a1f1509ff4b29bf4de997652678a5fdcbaeade5f4656f0468c0581bd"
+    },
+    {
+      "id": "slide-dsl",
+      "path": "SKILL.md",
+      "pages": 2,
+      "hash": "19b0e05cd9d6feaf864dc1d21d24976f05a74d79d6f7301343d13070251a5ce6",
+      "reassembledHash": "19b0e05cd9d6feaf864dc1d21d24976f05a74d79d6f7301343d13070251a5ce6"
+    },
+    {
+      "id": "social-emotional-learning",
+      "path": "SKILL.md",
+      "pages": 2,
+      "hash": "562a47a6c58fb6878f56f5563b3e013decbf08bb577ca422fa49518b5f400249",
+      "reassembledHash": "562a47a6c58fb6878f56f5563b3e013decbf08bb577ca422fa49518b5f400249"
+    },
+    {
+      "id": "stage-design",
+      "path": "SKILL.md",
+      "pages": 2,
+      "hash": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e",
+      "reassembledHash": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e"
+    },
+    {
+      "id": "stage-design",
+      "path": "references/course-workflow-legacy.md",
+      "pages": 2,
+      "hash": "b730663fa5bc2bba8e121753781d7185388ac9d24436c3fa43ea7f44da970f8d",
+      "reassembledHash": "b730663fa5bc2bba8e121753781d7185388ac9d24436c3fa43ea7f44da970f8d"
+    },
+    {
+      "id": "stage-design",
+      "path": "references/course-workflow.md",
+      "pages": 2,
+      "hash": "05afe195bcf6ab656e186216c52c489dba3ac2806bc55f773d949adc5744263f",
+      "reassembledHash": "05afe195bcf6ab656e186216c52c489dba3ac2806bc55f773d949adc5744263f"
+    },
+    {
+      "id": "stage-design",
+      "path": "references/inspection.md",
+      "pages": 1,
+      "hash": "516c642ad0a4be6cebd06028d71c1baebe1d3051c5e50c977fa1f6f1b92e495b",
+      "reassembledHash": "516c642ad0a4be6cebd06028d71c1baebe1d3051c5e50c977fa1f6f1b92e495b"
+    },
+    {
+      "id": "stage-design",
+      "path": "references/legacy-skill-map.md",
+      "pages": 1,
+      "hash": "5c4c3237e16b98b75784c419a51b9d4cfc21bab72072da697c60fe3f817c0123",
+      "reassembledHash": "5c4c3237e16b98b75784c419a51b9d4cfc21bab72072da697c60fe3f817c0123"
+    },
+    {
+      "id": "stage-dsl",
+      "path": "SKILL.md",
+      "pages": 1,
+      "hash": "5769aeb63fd589c6f0ed9240c7751933f1566b02ba7300cf4b8a0abbca3c43e2",
+      "reassembledHash": "5769aeb63fd589c6f0ed9240c7751933f1566b02ba7300cf4b8a0abbca3c43e2"
+    },
+    {
+      "id": "stage-dsl",
+      "path": "references/actions.md",
+      "pages": 2,
+      "hash": "ba1da1f90c0b6946fb4e5b9257da961778d928c807cb8e5950a824b79187e31c",
+      "reassembledHash": "ba1da1f90c0b6946fb4e5b9257da961778d928c807cb8e5950a824b79187e31c"
+    },
+    {
+      "id": "stage-dsl",
+      "path": "references/quiz.md",
+      "pages": 1,
+      "hash": "01f4471b1b3ab682424ce361babe28ded5190de574c881c99c1959fe4c09f5e2",
+      "reassembledHash": "01f4471b1b3ab682424ce361babe28ded5190de574c881c99c1959fe4c09f5e2"
+    },
+    {
+      "id": "stage-dsl",
+      "path": "references/simulation.md",
+      "pages": 2,
+      "hash": "42ce29acba3232829d5bacc8cef371dcf9b951cddaf0256ab2e4874987f0c2ca",
+      "reassembledHash": "42ce29acba3232829d5bacc8cef371dcf9b951cddaf0256ab2e4874987f0c2ca"
+    },
+    {
+      "id": "understanding-by-design",
+      "path": "SKILL.md",
+      "pages": 3,
+      "hash": "147a3eec6a0eefa7c7b5382c4a1c6eadb909e5bfbbb2f68053c8c0b508d29a71",
+      "reassembledHash": "147a3eec6a0eefa7c7b5382c4a1c6eadb909e5bfbbb2f68053c8c0b508d29a71"
+    },
+    {
+      "id": "workshop-style",
+      "path": "SKILL.md",
+      "pages": 1,
+      "hash": "677b279bb8433932bf3ff1efafabd97082bc5454672741529dfd68b0d0fd581a",
+      "reassembledHash": "677b279bb8433932bf3ff1efafabd97082bc5454672741529dfd68b0d0fd581a"
+    },
+    {
+      "id": "workshop-style",
+      "path": "references/structure-guidance.md",
+      "pages": 1,
+      "hash": "7689d29d6a8db0df4014559bd3d646590ca7e84636702e15c2b389dcbf8b4c15",
+      "reassembledHash": "7689d29d6a8db0df4014559bd3d646590ca7e84636702e15c2b389dcbf8b4c15"
+    },
+    {
+      "id": "zone-of-proximal-development",
+      "path": "SKILL.md",
+      "pages": 5,
+      "hash": "e08b0c8b77d7249fd3a061b18f5651c802679fba4d8d9359ddc5e16706587c3e",
+      "reassembledHash": "e08b0c8b77d7249fd3a061b18f5651c802679fba4d8d9359ddc5e16706587c3e"
+    },
+    {
+      "id": "zone-of-proximal-development",
+      "path": "references/exercise-lesson.md",
+      "pages": 2,
+      "hash": "15a914ca9103030189e01b96a48886512f87c67db1b2113bb6393cdf80dfa6ed",
+      "reassembledHash": "15a914ca9103030189e01b96a48886512f87c67db1b2113bb6393cdf80dfa6ed"
+    },
+    {
+      "id": "zone-of-proximal-development",
+      "path": "references/theory.md",
+      "pages": 2,
+      "hash": "4ff7a6386255bce19700034f0cef2351f762ba2ee05b9d6c23b97bdecf15552c",
+      "reassembledHash": "4ff7a6386255bce19700034f0cef2351f762ba2ee05b9d6c23b97bdecf15552c"
+    },
+    {
+      "requestedId": "course-authoring",
+      "canonicalId": "stage-design",
+      "requestedPath": "SKILL.md",
+      "path": "SKILL.md",
+      "bodyHash": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e"
+    },
+    {
+      "requestedId": "course-authoring",
+      "canonicalId": "stage-design",
+      "requestedPath": "references/course-workflow.md",
+      "path": "references/course-workflow.md",
+      "bodyHash": "05afe195bcf6ab656e186216c52c489dba3ac2806bc55f773d949adc5744263f"
+    },
+    {
+      "requestedId": "course-authoring",
+      "canonicalId": "stage-design",
+      "requestedPath": "references/course-workflow-legacy.md",
+      "path": "references/course-workflow-legacy.md",
+      "bodyHash": "b730663fa5bc2bba8e121753781d7185388ac9d24436c3fa43ea7f44da970f8d"
+    },
+    {
+      "requestedId": "course-authoring",
+      "canonicalId": "stage-design",
+      "requestedPath": "references/legacy-skill-map.md",
+      "path": "references/legacy-skill-map.md",
+      "bodyHash": "5c4c3237e16b98b75784c419a51b9d4cfc21bab72072da697c60fe3f817c0123"
+    },
+    {
+      "requestedId": "slide-design",
+      "canonicalId": "slide-craft",
+      "requestedPath": "SKILL.md",
+      "path": "SKILL.md",
+      "bodyHash": "eeea9f47a1f1509ff4b29bf4de997652678a5fdcbaeade5f4656f0468c0581bd"
+    },
+    {
+      "requestedId": "interactive-simulation",
+      "canonicalId": "stage-dsl",
+      "requestedPath": "SKILL.md",
+      "path": "references/simulation.md",
+      "bodyHash": "42ce29acba3232829d5bacc8cef371dcf9b951cddaf0256ab2e4874987f0c2ca"
+    },
+    {
+      "requestedId": "narration-actions",
+      "canonicalId": "stage-dsl",
+      "requestedPath": "SKILL.md",
+      "path": "references/actions.md",
+      "bodyHash": "ba1da1f90c0b6946fb4e5b9257da961778d928c807cb8e5950a824b79187e31c"
+    },
+    {
+      "requestedId": "inspection-quality",
+      "canonicalId": "stage-design",
+      "requestedPath": "SKILL.md",
+      "path": "references/inspection.md",
+      "bodyHash": "516c642ad0a4be6cebd06028d71c1baebe1d3051c5e50c977fa1f6f1b92e495b"
+    },
+    {
+      "requestedId": "quiz-design",
+      "canonicalId": "stage-dsl",
+      "requestedPath": "SKILL.md",
+      "path": "references/quiz.md",
+      "bodyHash": "01f4471b1b3ab682424ce361babe28ded5190de574c881c99c1959fe4c09f5e2"
+    },
+    {
+      "requestedId": "course",
+      "canonicalId": "stage-design",
+      "path": "SKILL.md"
+    },
+    {
+      "requestedId": "slides",
+      "canonicalId": "slide-craft",
+      "path": "SKILL.md"
+    },
+    {
+      "requestedId": "simulation",
+      "canonicalId": "stage-dsl",
+      "path": "references/simulation.md"
+    },
+    {
+      "requestedId": "narration",
+      "canonicalId": "stage-dsl",
+      "path": "references/actions.md"
+    },
+    {
+      "requestedId": "inspection",
+      "canonicalId": "stage-design",
+      "path": "references/inspection.md"
+    },
+    {
+      "requestedId": "quiz",
+      "canonicalId": "stage-dsl",
+      "path": "references/quiz.md"
+    }
+  ],
+  "rejected": [
+    {
+      "path": "../models.py",
+      "code": "SKILL_SCOPE"
+    },
+    {
+      "path": "/etc/passwd",
+      "code": "SKILL_SCOPE"
+    },
+    {
+      "path": "references/../SKILL.md",
+      "code": "SKILL_SCOPE"
+    },
+    {
+      "path": "references/missing.md",
+      "code": "SKILL_SCOPE"
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-design/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/pro-editing/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/pro-editing/outline-constraints.json",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/slide-craft/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/slide-dsl/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/references/actions.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/references/pbl.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/references/quiz.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/references/widget.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/lecture-style/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/lecture-style/outline-constraints.json",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/workshop-style/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/workshop-style/outline-constraints.json",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/deep-interactive/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/deep-interactive/outline-constraints.json",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/feynman-learning/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/core-literacy.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/subjects/humanities.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/subjects/languages.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/subjects/mathematics.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/subjects/science.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/learning-to-learn/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/social-emotional-learning/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/understanding-by-design/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/zone-of-proximal-development/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/zone-of-proximal-development/references/exercise-lesson.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/zone-of-proximal-development/references/theory.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/deep-research/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/deep-research/outline-constraints.json",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/fact-check/SKILL.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/interactive-actions/system.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/interactive-actions/user.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/quiz-actions/system.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/quiz-actions/user.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/quiz-content/system.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/quiz-content/user.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/simulation-content/system.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/simulation-content/user.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/slide-actions/system.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/slide-actions/user.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/slide-content/system.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/slide-content/user.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/lib/prompts/snippets/element-types.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/lib/prompts/snippets/action-types.md",
+      "unchanged": true
+    },
+    {
+      "source": "OpenMAIC-main/lib/prompts/snippets/speech-guidelines.md",
+      "unchanged": true
+    }
+  ],
+  "actualToolResult": {
+    "ok": true,
+    "waiting": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"skillId\": \"stage-design\", \"requestedId\": \"stage-design\", \"canonicalId\": \"stage-design\", \"requestedPath\": \"SKILL.md\", \"path\": \"SKILL.md\", \"bodyHash\": \"49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e\", \"bodyBytes\": 2459, \"offsetUnit\": \"unicode_codepoints\", \"skillVersion\": \"ecfe5b141ab99ca4133f383b235aecd77c50e7c808a0f11e8be78583a75335e2\", \"snapshotVersion\": \"9dae46824eedd76d42e3916cbefc3507f014751679e6f54cf73784b029496336\", \"diagnostics\": [], \"text\": \"---\\nname: stage-design\\ndescription: \\\"课程方案、批准、逐页制作及真实完成检查，适用于新课设计与完善已有课。\\\"\\nmetadata:\\n  title: \\\"课堂设计\\\"\\n---\\n\\n# 课程设计与制作\\n适用于创建单课、完善已有课及自然语言定位多课。已有课先 list_stages/list_scenes/read_stage，不因编辑建立副本。新课明确 audience、objectives 与带 id/title/type/brief 的 pages，ask_user(kind=plan_approval,question,plan) 等待真实批准，再 create_stage(approvalId)；打印方案不是制作完成。角色固定老师与三位同学，无 roster 配置。\\n\\n## 逐页工作流\\n1. list_scenes 读取批准槽位 pageId、sceneId、revision 和真实 issues。generate_scene(stageId,pageId,expectedRevision,brief,sourceIds,mediaIds) 每次只保存一个页面。brief 自包含目标、任务、方法、证据与衔接。\\n2. generate_actions(stageId,sceneId,expectedRevision,guidance) 独立生成讲稿与教学动作。guidance 传递当前方法及讨论安排；页面生成不等于动作完成。\\n3. list_voices 查看当前兼容 voiceId；必要时 set_teacher_voice；generate_tts 给已保存 speech 独立配音，保留成功段，未知付费结果不自动重发。\\n4. check_scene(mode=program) 真实运行；render_scene_preview 获取截图，观察后 check_scene(mode=visual,snapshotId,passed,findings) 保存判断。按 references/inspection.md 处理失败与过期。\\n5. list_scenes 核对无缺页、动作/音频缺失及过期/失败检查，ready 来自真实覆盖，不来自结束语。\\n\\n## 方法与边界\\n每页承担明确学习作用：问题→证据/机制→应用→检查/迁移。标题用有意义\", \"offset\": 0, \"total\": 1395, \"nextOffset\": 1000, \"hasMore\": true}"
+      }
+    ],
+    "details": {
+      "schemaVersion": 2,
+      "status": "completed",
+      "target": {},
+      "data": {
+        "skillId": "stage-design",
+        "requestedId": "stage-design",
+        "canonicalId": "stage-design",
+        "requestedPath": "SKILL.md",
+        "path": "SKILL.md",
+        "bodyHash": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e",
+        "bodyBytes": 2459,
+        "offsetUnit": "unicode_codepoints",
+        "skillVersion": "ecfe5b141ab99ca4133f383b235aecd77c50e7c808a0f11e8be78583a75335e2",
+        "snapshotVersion": "9dae46824eedd76d42e3916cbefc3507f014751679e6f54cf73784b029496336",
+        "diagnostics": [],
+        "text": "---\nname: stage-design\ndescription: \"课程方案、批准、逐页制作及真实完成检查，适用于新课设计与完善已有课。\"\nmetadata:\n  title: \"课堂设计\"\n---\n\n# 课程设计与制作\n适用于创建单课、完善已有课及自然语言定位多课。已有课先 list_stages/list_scenes/read_stage，不因编辑建立副本。新课明确 audience、objectives 与带 id/title/type/brief 的 pages，ask_user(kind=plan_approval,question,plan) 等待真实批准，再 create_stage(approvalId)；打印方案不是制作完成。角色固定老师与三位同学，无 roster 配置。\n\n## 逐页工作流\n1. list_scenes 读取批准槽位 pageId、sceneId、revision 和真实 issues。generate_scene(stageId,pageId,expectedRevision,brief,sourceIds,mediaIds) 每次只保存一个页面。brief 自包含目标、任务、方法、证据与衔接。\n2. generate_actions(stageId,sceneId,expectedRevision,guidance) 独立生成讲稿与教学动作。guidance 传递当前方法及讨论安排；页面生成不等于动作完成。\n3. list_voices 查看当前兼容 voiceId；必要时 set_teacher_voice；generate_tts 给已保存 speech 独立配音，保留成功段，未知付费结果不自动重发。\n4. check_scene(mode=program) 真实运行；render_scene_preview 获取截图，观察后 check_scene(mode=visual,snapshotId,passed,findings) 保存判断。按 references/inspection.md 处理失败与过期。\n5. list_scenes 核对无缺页、动作/音频缺失及过期/失败检查，ready 来自真实覆盖，不来自结束语。\n\n## 方法与边界\n每页承担明确学习作用：问题→证据/机制→应用→检查/迁移。标题用有意义",
+        "offset": 0,
+        "total": 1395,
+        "nextOffset": 1000,
+        "hasMore": true
+      },
+      "changes": {},
+      "artifacts": [],
+      "issues": []
+    },
+    "isError": false,
+    "terminate": false,
+    "data": {
+      "skillId": "stage-design",
+      "requestedId": "stage-design",
+      "canonicalId": "stage-design",
+      "requestedPath": "SKILL.md",
+      "path": "SKILL.md",
+      "bodyHash": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e",
+      "bodyBytes": 2459,
+      "offsetUnit": "unicode_codepoints",
+      "skillVersion": "ecfe5b141ab99ca4133f383b235aecd77c50e7c808a0f11e8be78583a75335e2",
+      "snapshotVersion": "9dae46824eedd76d42e3916cbefc3507f014751679e6f54cf73784b029496336",
+      "diagnostics": [],
+      "text": "---\nname: stage-design\ndescription: \"课程方案、批准、逐页制作及真实完成检查，适用于新课设计与完善已有课。\"\nmetadata:\n  title: \"课堂设计\"\n---\n\n# 课程设计与制作\n适用于创建单课、完善已有课及自然语言定位多课。已有课先 list_stages/list_scenes/read_stage，不因编辑建立副本。新课明确 audience、objectives 与带 id/title/type/brief 的 pages，ask_user(kind=plan_approval,question,plan) 等待真实批准，再 create_stage(approvalId)；打印方案不是制作完成。角色固定老师与三位同学，无 roster 配置。\n\n## 逐页工作流\n1. list_scenes 读取批准槽位 pageId、sceneId、revision 和真实 issues。generate_scene(stageId,pageId,expectedRevision,brief,sourceIds,mediaIds) 每次只保存一个页面。brief 自包含目标、任务、方法、证据与衔接。\n2. generate_actions(stageId,sceneId,expectedRevision,guidance) 独立生成讲稿与教学动作。guidance 传递当前方法及讨论安排；页面生成不等于动作完成。\n3. list_voices 查看当前兼容 voiceId；必要时 set_teacher_voice；generate_tts 给已保存 speech 独立配音，保留成功段，未知付费结果不自动重发。\n4. check_scene(mode=program) 真实运行；render_scene_preview 获取截图，观察后 check_scene(mode=visual,snapshotId,passed,findings) 保存判断。按 references/inspection.md 处理失败与过期。\n5. list_scenes 核对无缺页、动作/音频缺失及过期/失败检查，ready 来自真实覆盖，不来自结束语。\n\n## 方法与边界\n每页承担明确学习作用：问题→证据/机制→应用→检查/迁移。标题用有意义",
+      "offset": 0,
+      "total": 1395,
+      "nextOffset": 1000,
+      "hasMore": true
+    },
+    "error": null
+  }
+}

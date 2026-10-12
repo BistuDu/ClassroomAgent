@@ -1,0 +1,341 @@
+{
+  "sources": [
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-design/SKILL.md",
+      "sha256": "7275ef6f005eb071e3c943edf3d4355c98a491ea13347c9320995cbfe3370609",
+      "target": "OpenMAIC-python/skills/agent-runtime/stage-design/SKILL.md",
+      "adaptation": "审批与多课读取适配；页面/动作/TTS独立，固定课堂角色，真实检查。",
+      "targetSha256": "49aa7978cb82a42676fb838784bedc5966c558672cff91801193ef6b949fe82e"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/pro-editing/SKILL.md",
+      "sha256": "546a67da5c595646daea06722ff3d6bb183eeef63a0feb49e8d656d24a6f3df7",
+      "target": "OpenMAIC-python/skills/agent-runtime/pro-editing/SKILL.md",
+      "adaptation": "原最小编辑与叶字段矩阵保留，改用稳定target、replace_text与三层写入合同。",
+      "targetSha256": "cdf7c79e5cd57e2e0ef8be83d37a5316e8606c72356cda6dce54c62b70450a34"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/pro-editing/outline-constraints.json",
+      "sha256": "a1e9a3f34122e56ff3c786df107960c2a80412525b210a288da91f3ca4e20ae3",
+      "target": "OpenMAIC-python/skills/agent-runtime/pro-editing/references/structure-guidance.md",
+      "adaptation": "原最小编辑与叶字段矩阵保留，改用稳定target、replace_text与三层写入合同。",
+      "targetSha256": "7a633615c4b4427af1da802d8f8f8510eceb87539e45faeff1d89be1012bd457"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/slide-craft/SKILL.md",
+      "sha256": "cf35eea56909b1427f171c6798ba55392761edb081603138892368d1bd727081",
+      "target": "OpenMAIC-python/skills/agent-runtime/slide-craft/SKILL.md",
+      "adaptation": "视觉层级/几何/对比保留，移除富文本高度硬表，按Python renderer计算。",
+      "targetSha256": "eeea9f47a1f1509ff4b29bf4de997652678a5fdcbaeade5f4656f0468c0581bd"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/slide-dsl/SKILL.md",
+      "sha256": "7234933c646c6d6436f8db2bd36862378c89d924a496a1db9ad485171180091a",
+      "target": "OpenMAIC-python/skills/agent-runtime/slide-dsl/SKILL.md",
+      "adaptation": "原10类富文本元素改为Python7类，重写字段与合法JSON例子。",
+      "targetSha256": "19b0e05cd9d6feaf864dc1d21d24976f05a74d79d6f7301343d13070251a5ce6"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/SKILL.md",
+      "sha256": "53a7d94da2b872076c448771d9cc48471ab5aad82dfe13bcc542cd16be7ce713",
+      "target": "OpenMAIC-python/skills/agent-runtime/stage-dsl/SKILL.md",
+      "adaptation": "页面相对路径与Python动作/quiz/simulation合同，PBL暂缓。",
+      "targetSha256": "5769aeb63fd589c6f0ed9240c7751933f1566b02ba7300cf4b8a0abbca3c43e2"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/references/actions.md",
+      "sha256": "4e322e5c30140e948b0ab629c79b382c8a9076ff1bff928bbd9f3677a775fd47",
+      "target": "OpenMAIC-python/skills/agent-runtime/stage-dsl/references/actions.md",
+      "adaptation": "页面相对路径与Python动作/quiz/simulation合同，PBL暂缓。",
+      "targetSha256": "ba1da1f90c0b6946fb4e5b9257da961778d928c807cb8e5950a824b79187e31c"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/references/pbl.md",
+      "sha256": "fdd430ebde436592ca602fe566a7ef78016a1843541a51d1e10c1a18e08b9c69",
+      "target": null,
+      "adaptation": "页面相对路径与Python动作/quiz/simulation合同，PBL暂缓。"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/references/quiz.md",
+      "sha256": "99c4e4f19fb427af82faaa2d3be42ea2aaf0386246775c1be33be3bf1fb3e950",
+      "target": "OpenMAIC-python/skills/agent-runtime/stage-dsl/references/quiz.md",
+      "adaptation": "页面相对路径与Python动作/quiz/simulation合同，PBL暂缓。",
+      "targetSha256": "01f4471b1b3ab682424ce361babe28ded5190de574c881c99c1959fe4c09f5e2"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/stage-dsl/references/widget.md",
+      "sha256": "f707d98280a8aa3eb8fa87376354909d37c31de9093d540a6ad9c798fad9fd93",
+      "target": "OpenMAIC-python/skills/agent-runtime/stage-dsl/references/simulation.md",
+      "adaptation": "页面相对路径与Python动作/quiz/simulation合同，PBL暂缓。",
+      "targetSha256": "42ce29acba3232829d5bacc8cef371dcf9b951cddaf0256ab2e4874987f0c2ca"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/lecture-style/SKILL.md",
+      "sha256": "540e7a4b34cd8d5de66861ebe96c73a14fcd87bc9c020e75edfc92080b23c42a",
+      "target": "OpenMAIC-python/skills/agent-runtime/lecture-style/SKILL.md",
+      "adaptation": "论证弧与案例保留，讲稿段长适配，固定老师，意图用brief/guidance。",
+      "targetSha256": "3deb1ca0c7eab22904c489f23e71978f7e55b60d98ec1e0b0ffbe907602bd7f5"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/lecture-style/outline-constraints.json",
+      "sha256": "1b8aef5a81bbc59e9ef6691e7d65bae137301dde6466ea9fef49ff7d72a68de9",
+      "target": "OpenMAIC-python/skills/agent-runtime/lecture-style/references/structure-guidance.md",
+      "adaptation": "论证弧与案例保留，讲稿段长适配，固定老师，意图用brief/guidance。",
+      "targetSha256": "b7b77c208a1c38cea1fa62e145ef66423d301085748bb81b2594f228dde792a8"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/workshop-style/SKILL.md",
+      "sha256": "002a4c9842069fb6f24da4b2d3ed0b6a65b0cef08298f5ae05d5905e661d884a",
+      "target": "OpenMAIC-python/skills/agent-runtime/workshop-style/SKILL.md",
+      "adaptation": "练习节奏与短句保留，不配置助教/其他引擎，方法比例仅指导。",
+      "targetSha256": "677b279bb8433932bf3ff1efafabd97082bc5454672741529dfd68b0d0fd581a"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/workshop-style/outline-constraints.json",
+      "sha256": "a6c6f348356a6892e198c836b297524f4bf16989212a68d7146a5cb99fcf2711",
+      "target": "OpenMAIC-python/skills/agent-runtime/workshop-style/references/structure-guidance.md",
+      "adaptation": "练习节奏与短句保留，不配置助教/其他引擎，方法比例仅指导。",
+      "targetSha256": "7689d29d6a8db0df4014559bd3d646590ca7e84636702e15c2b389dcbf8b4c15"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/deep-interactive/SKILL.md",
+      "sha256": "bb26d6b34f34bad37a76fef7f9863e1e67a2d4a5fbdf89d4ef08734c74db97bb",
+      "target": "OpenMAIC-python/skills/agent-runtime/deep-interactive/SKILL.md",
+      "adaptation": "操控学习流程保留，仅数值模拟；变化任务代替不存在widgetType引擎。",
+      "targetSha256": "bff6f6abd51246f077811c1a3bb18f6a3a51ed296e2b0da33ada165dd3d912c3"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/deep-interactive/outline-constraints.json",
+      "sha256": "31f9618dac6dd1598a4d679e35f94b3c8b85c003dc7dd0e262570cc866f5ae63",
+      "target": "OpenMAIC-python/skills/agent-runtime/deep-interactive/references/structure-guidance.md",
+      "adaptation": "操控学习流程保留，仅数值模拟；变化任务代替不存在widgetType引擎。",
+      "targetSha256": "7a53149c29ff3d53f11c266a341706763f51a1dafdf767927abe10b060e90a74"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/feynman-learning/SKILL.md",
+      "sha256": "af7d9eaca12896a498259cbae3fa09d196d455b4e72af75d63ed1d1575ca944e",
+      "target": "OpenMAIC-python/skills/agent-runtime/feynman-learning/SKILL.md",
+      "adaptation": "完整费曼循环保留，开放解释放课堂对话，不伪造静态诊断/学习记录。",
+      "targetSha256": "15f0234ae7da55ac1d2bf8e6d2a3f6de76f00f8196fa1720bad1785df625bc65"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/SKILL.md",
+      "sha256": "fbc03e9245406bac2d5b312f1a5711de311d17dc98eeb30d8eab298ee397c08f",
+      "target": "OpenMAIC-python/skills/agent-runtime/k12-core-literacy-planning/SKILL.md",
+      "adaptation": "学段学科参考保留，受限read_skill，单课与现有三页型。",
+      "targetSha256": "229fe9d994cdf972297bc33711f705a1fcd3c9f28928512cc43c98558841e05e"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/core-literacy.md",
+      "sha256": "47635d06a4a598b28c22a408f5f218e96dd2eca664ca74c1774bb95c848a47ee",
+      "target": "OpenMAIC-python/skills/agent-runtime/k12-core-literacy-planning/references/core-literacy.md",
+      "adaptation": "学段学科参考保留，受限read_skill，单课与现有三页型。",
+      "targetSha256": "47635d06a4a598b28c22a408f5f218e96dd2eca664ca74c1774bb95c848a47ee"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/subjects/humanities.md",
+      "sha256": "616dfe49b3f8c96c917f81a98d04a23b374f1ec509c6d59ee9874d7656353ccc",
+      "target": "OpenMAIC-python/skills/agent-runtime/k12-core-literacy-planning/references/subjects/humanities.md",
+      "adaptation": "学段学科参考保留，受限read_skill，单课与现有三页型。",
+      "targetSha256": "616dfe49b3f8c96c917f81a98d04a23b374f1ec509c6d59ee9874d7656353ccc"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/subjects/languages.md",
+      "sha256": "b88c8350e51ffcaf502ef891e0e69f8351295b550c4fe7202efa595de7327b89",
+      "target": "OpenMAIC-python/skills/agent-runtime/k12-core-literacy-planning/references/subjects/languages.md",
+      "adaptation": "学段学科参考保留，受限read_skill，单课与现有三页型。",
+      "targetSha256": "b88c8350e51ffcaf502ef891e0e69f8351295b550c4fe7202efa595de7327b89"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/subjects/mathematics.md",
+      "sha256": "c6a3867f7eb9546928c7ba08243ac3add5e4ec7a963c745191186565632712b1",
+      "target": "OpenMAIC-python/skills/agent-runtime/k12-core-literacy-planning/references/subjects/mathematics.md",
+      "adaptation": "学段学科参考保留，受限read_skill，单课与现有三页型。",
+      "targetSha256": "c6a3867f7eb9546928c7ba08243ac3add5e4ec7a963c745191186565632712b1"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/k12-core-literacy-planning/references/subjects/science.md",
+      "sha256": "2e2e7589fe7798771e69f95bd8222fe0a87ef8f189e8785a0dc90880353e5047",
+      "target": "OpenMAIC-python/skills/agent-runtime/k12-core-literacy-planning/references/subjects/science.md",
+      "adaptation": "学段学科参考保留，受限read_skill，单课与现有三页型。",
+      "targetSha256": "2e2e7589fe7798771e69f95bd8222fe0a87ef8f189e8785a0dc90880353e5047"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/learning-to-learn/SKILL.md",
+      "sha256": "fe8be28613d01efe49a858bb89bf97f84273bd20311c805c36e2bfd28519c2ce",
+      "target": "OpenMAIC-python/skills/agent-runtime/learning-to-learn/SKILL.md",
+      "adaptation": "教学流程和示例保留；执行合同改写为Python字段、独立生成与真实证据",
+      "targetSha256": "b72d6ea18e438190b149f020df299bc14b2c236df25b540d4f69b2871356728e"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/social-emotional-learning/SKILL.md",
+      "sha256": "4aea1736a8855c2ef32767bf4e5e8428bc573a0d5b1cb9816c84d1ae34e86284",
+      "target": "OpenMAIC-python/skills/agent-runtime/social-emotional-learning/SKILL.md",
+      "adaptation": "教学流程和示例保留；执行合同改写为Python字段、独立生成与真实证据",
+      "targetSha256": "562a47a6c58fb6878f56f5563b3e013decbf08bb577ca422fa49518b5f400249"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/understanding-by-design/SKILL.md",
+      "sha256": "75af8be3ec7772b6ae97ac70ceedbb00fcfbb16a6d4addceb5f62ec0b3614808",
+      "target": "OpenMAIC-python/skills/agent-runtime/understanding-by-design/SKILL.md",
+      "adaptation": "逆向设计与GRASPS/WHERETO保留，单课，无系列/PBL引擎。",
+      "targetSha256": "147a3eec6a0eefa7c7b5382c4a1c6eadb909e5bfbbb2f68053c8c0b508d29a71"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/zone-of-proximal-development/SKILL.md",
+      "sha256": "cac0ff39f207570c3a40410fe2b61536ce4a9a5e54b33779a96015e45aab4049",
+      "target": "OpenMAIC-python/skills/agent-runtime/zone-of-proximal-development/SKILL.md",
+      "adaptation": "理论/整课习题参考保留，实际证据与自由回答走课堂对话。",
+      "targetSha256": "e08b0c8b77d7249fd3a061b18f5651c802679fba4d8d9359ddc5e16706587c3e"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/zone-of-proximal-development/references/exercise-lesson.md",
+      "sha256": "69870c3f8ff45d4295fece627a572d430fe444f860cb431795d9de30257ad1e1",
+      "target": "OpenMAIC-python/skills/agent-runtime/zone-of-proximal-development/references/exercise-lesson.md",
+      "adaptation": "理论/整课习题参考保留，实际证据与自由回答走课堂对话。",
+      "targetSha256": "15a914ca9103030189e01b96a48886512f87c67db1b2113bb6393cdf80dfa6ed"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/zone-of-proximal-development/references/theory.md",
+      "sha256": "3bdbaa09c3d2e913ae0053eb1adb0d7778f52c56628e3d0e31cb05c2d365c9ec",
+      "target": "OpenMAIC-python/skills/agent-runtime/zone-of-proximal-development/references/theory.md",
+      "adaptation": "理论/整课习题参考保留，实际证据与自由回答走课堂对话。",
+      "targetSha256": "4ff7a6386255bce19700034f0cef2351f762ba2ee05b9d6c23b97bdecf15552c"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/deep-research/SKILL.md",
+      "sha256": "063ce7f57f178e8e3f4e5cdf52a34a78b9cfbd82c29e45d5ee93325c54f25ca0",
+      "target": "OpenMAIC-python/skills/agent-runtime/deep-research/SKILL.md",
+      "adaptation": "问题/台账/时效/冲突保留，来源读取改为fetch_url版本分页。",
+      "targetSha256": "b25d676f1da4fb57ff5b0880f4c905156d7ee82cb8cf8b05f0e4c1a53b7f5165"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/deep-research/outline-constraints.json",
+      "sha256": "8acbc55066657da9866d4e28388a1a8642976793cc2dd492d3730f0c475d2bd7",
+      "target": "OpenMAIC-python/skills/agent-runtime/deep-research/references/structure-guidance.md",
+      "adaptation": "问题/台账/时效/冲突保留，来源读取改为fetch_url版本分页。",
+      "targetSha256": "0bdaa31ea1524315e3bf9b35acc703776c773f2ce3550fa5bfddfa6c07a9d5aa"
+    },
+    {
+      "source": "OpenMAIC-main/skills/agent-runtime/fact-check/SKILL.md",
+      "sha256": "44979669a1873ed393f249b06352fa37e01c608ce6a3f611368e1502f9ad4427",
+      "target": "OpenMAIC-python/skills/agent-runtime/fact-check/SKILL.md",
+      "adaptation": "核查报告与批准输入保护保留，来源工具与options标签按Python适配。",
+      "targetSha256": "a473dc3b633ac8d3370db9b4ef533c2c5eb61597523cc14a47e61f4fa61fb0f4"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/interactive-actions/system.md",
+      "sha256": "aac722a48c6bdd1f099f800e465d2fd2c7d214ea81f88704ec821c852b33eb7c",
+      "target": "OpenMAIC-python/generators/narration-interactive.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "c242614cfdee7b2b78dfc6e24c300eb474b4983f3f7bce9db52d47943f972a18"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/interactive-actions/user.md",
+      "sha256": "2007962e0454b51dc95be8ccbe40a87ceb711436f00bae8dbd88cba233b0ac27",
+      "target": "OpenMAIC-python/generators/narration-interactive.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "c242614cfdee7b2b78dfc6e24c300eb474b4983f3f7bce9db52d47943f972a18"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/quiz-actions/system.md",
+      "sha256": "7ec6bfbe2fbc94af7b03e79462245cc7f8fd7f0aa8fb3d0100c903d890e52331",
+      "target": "OpenMAIC-python/generators/narration-quiz.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "2575c86538bf012ed5d45e70be342f5df51795a3cb1a7b56bf0a9b992f4a10b4"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/quiz-actions/user.md",
+      "sha256": "281146d66843b36b5d31fbaf9aaad24aa3ee0322778f9b6ddc9ff63a48b81666",
+      "target": "OpenMAIC-python/generators/narration-quiz.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "2575c86538bf012ed5d45e70be342f5df51795a3cb1a7b56bf0a9b992f4a10b4"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/quiz-content/system.md",
+      "sha256": "9f8b9d192f202e060ded6b0d9bc2164cc7baa00f079b1edbfcacb852513f96fd",
+      "target": "OpenMAIC-python/generators/quiz-generation.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "36ca01365c88ca0c7e4cae28c9cb0eb0bb141df36269e320b9fa0d0fe0bf8ed1"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/quiz-content/user.md",
+      "sha256": "fc8d49e540905e299d3471653ef9568ad1ccbdc71d465cf0874d269632041d46",
+      "target": "OpenMAIC-python/generators/quiz-generation.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "36ca01365c88ca0c7e4cae28c9cb0eb0bb141df36269e320b9fa0d0fe0bf8ed1"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/simulation-content/system.md",
+      "sha256": "b1ec88316f06da25e76e44b8a103639158a75fb28e45c3be82d8c48eba67d66c",
+      "target": "OpenMAIC-python/generators/simulation-generation.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "7065fd049d5d81d8f182a37d037b6402fcb09fc078035086e10647c09e82c705"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/simulation-content/user.md",
+      "sha256": "d5a52c8a249351b8438f5edfeac9b95ca0af2da6631be3aedc95b13f1a199bfe",
+      "target": "OpenMAIC-python/generators/simulation-generation.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "7065fd049d5d81d8f182a37d037b6402fcb09fc078035086e10647c09e82c705"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/slide-actions/system.md",
+      "sha256": "219e8da1eb3c854dbe6ee6fdedda1936e0092fff6c8984b9277c5c6cef2443b6",
+      "target": "OpenMAIC-python/generators/narration-slide.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "859e2d1c0904f9fa1e4bd658104da6095e75c870219f5b8f9972b1e230ab7d20"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/slide-actions/user.md",
+      "sha256": "71a95329793ba0fae6030b6b9eb562bed62e9460bd26c2fcbd92d7c53f549512",
+      "target": "OpenMAIC-python/generators/narration-slide.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "859e2d1c0904f9fa1e4bd658104da6095e75c870219f5b8f9972b1e230ab7d20"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/slide-content/system.md",
+      "sha256": "fac82e884070e71cf82ffca67fb1ee1c861e3cd90d4f9816c7085c428180aebd",
+      "target": "OpenMAIC-python/generators/slide-generation.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "dfafb74951c688a30aba4ae465f4be153102089a180ddccfca97b50fbf91e8ee"
+    },
+    {
+      "source": "OpenMAIC-main/packages/@openmaic/generation/templates/slide-content/user.md",
+      "sha256": "7d7486fed0d897a85273794359cd17383d7b9f2dbca7481134a1519687368c99",
+      "target": "OpenMAIC-python/generators/slide-generation.md",
+      "adaptation": "迁移制作规则；适配Scene/ActionOutput，不运行原模板引擎",
+      "targetSha256": "dfafb74951c688a30aba4ae465f4be153102089a180ddccfca97b50fbf91e8ee"
+    },
+    {
+      "source": "OpenMAIC-main/lib/prompts/snippets/element-types.md",
+      "sha256": "c5d6473ea493e79986ac50cdc8b91d11c854db02d94292894d8129a587bbf9ab",
+      "target": "OpenMAIC-python/generators",
+      "adaptation": "按Python实际元素/动作/讲稿字段适配"
+    },
+    {
+      "source": "OpenMAIC-main/lib/prompts/snippets/action-types.md",
+      "sha256": "e35455e68aaabf8aa1407466f450dd74295b87ec68f15751b24875f357483d5a",
+      "target": "OpenMAIC-python/generators",
+      "adaptation": "按Python实际元素/动作/讲稿字段适配"
+    },
+    {
+      "source": "OpenMAIC-main/lib/prompts/snippets/speech-guidelines.md",
+      "sha256": "3b26f36bd931cc02e28eb9af8e64ced70916bee342597e73eb1a0c51532075fd",
+      "target": "OpenMAIC-python/generators",
+      "adaptation": "按Python实际元素/动作/讲稿字段适配"
+    }
+  ],
+  "deferred": [
+    "curriculum-planner",
+    "spiral-curriculum",
+    "page-clone",
+    "pptx-import",
+    "style-clone",
+    "teacher-style-clone",
+    "vocational",
+    "build-personal-skill"
+  ],
+  "legacyBackup": "docs/skill-migration/legacy-six",
+  "structureChecker": "仅方法参考，不注册原结构检查器"
+}

@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import {createSkillLoader, discoverSkills, minimalSkillLoader} from '../agent-runtime/skill-resources.ts';
+import path from 'node:path';
+
+const root = process.cwd();
+const agentDir = path.join(root,'data','pi');
+const snapshot = await discoverSkills(root,agentDir);
+assert.equal(snapshot.skills.length,16);
+assert.deepEqual(snapshot.diagnostics,[]);
+const loader = createSkillLoader(root,agentDir,'最小运行时提示',snapshot);
+await loader.reload();
+assert.equal(loader.getSkills().skills.length,16);
+const prompt = loader.getSystemPrompt();
+assert.match(prompt,/read_skill/);
+assert.doesNotMatch(prompt,/至少保留 40px/);
+assert.doesNotMatch(prompt,/Use the read tool|Use bash/);
+assert.equal(loader.getExtensions().extensions.length,0);
+const broken = await discoverSkills(path.join(root,'data','missing-skill-project'),agentDir);
+const fallback = createSkillLoader(root,agentDir,'最小运行时提示',broken);
+await fallback.reload();
+assert.equal(fallback.getSystemPrompt(),'最小运行时提示');
+assert.equal(fallback.getSkills().skills.length,0);
+assert.ok(broken.loadError);
+const emergency=minimalSkillLoader('最小运行时提示',broken);
+assert.equal(emergency.getSystemPrompt(),'最小运行时提示');
+assert.deepEqual(emergency.getSkills().skills,[]);
+assert.deepEqual(emergency.getExtensions().extensions,[]);
+console.log('Skill loader: 16 Skills, lightweight index, no extensions, minimal fallback passed');

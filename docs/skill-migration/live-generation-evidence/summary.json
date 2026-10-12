@@ -1,0 +1,35 @@
+{
+  "fixture": "/Users/dyh/Desktop/总文件夹/项目/OpenMAIC/OpenMAIC-python/data/skill-alignment-92vnbuwo",
+  "generationRequests": 8,
+  "workshopPageTypes": [
+    "slide",
+    "interactive",
+    "quiz"
+  ],
+  "lecturePageTypes": [
+    "slide"
+  ],
+  "noAudio": true,
+  "otherPagesUnchanged": true,
+  "actionsPreserved": true,
+  "providerEvidence": "当前配置模型真实生成；UI重试场景单独使用测试模型响应，SDK流程未替换",
+  "renderFindings": [
+    "普通页、实验、测验与讲授页真实浏览器渲染",
+    "实验预设F=8,m=2：a=4.0 m/s²",
+    "测验提交前无答案解析",
+    "讲授公式与说明重叠：生成质量缺陷，未宣称程序/视觉检查通过"
+  ],
+  "minimalEdit": {
+    "elementId": "title",
+    "field": "fontSize",
+    "before": 48,
+    "after": 36,
+    "otherPagesUnchanged": true,
+    "actionsPreserved": true
+  },
+  "retry": {
+    "identicalPayload": true,
+    "attempts": 2,
+    "singleSdkUserMessage": true
+  }
+}

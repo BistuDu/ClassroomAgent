@@ -1,0 +1,4 @@
+{
+ "compilerOptions": {"target":"ES2022","lib":["ES2022","DOM","DOM.Iterable"],"module":"ESNext","moduleResolution":"Bundler","jsx":"react-jsx","strict":true,"esModuleInterop":true,"resolveJsonModule":true,"skipLibCheck":true,"allowImportingTsExtensions":true,"noEmit":true,"types":["node"]},
+ "include":["frontend/src","frontend/vite.config.ts","agent-runtime","contracts/generated.ts"]
+}

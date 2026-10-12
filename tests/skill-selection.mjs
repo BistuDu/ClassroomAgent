@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {skillHandles,selectSkills,skillCoverage,SKILL_LOAD_LIMITS} from '../agent-runtime/skill-selection.ts';
+assert.deepEqual(skillHandles('/workshop-style /workshop-style /skill:slides https://example.org/lecture-style /tmp/slide-dsl ` /fact-check `\n```\n/deep-research\n```'),['workshop-style','slides']);
+const text='甲'.repeat(40001),bodyHash=createHash('sha256').update(text).digest('hex');
+const item={skillId:'large',version:'v1',bodyHash,bodyBytes:Buffer.byteLength(text)};
+const resources={version:'snapshot',skills:[item],diagnostics:[]};
+assert.deepEqual(selectSkills('/large',resources).unloaded.map(r=>r.requestedId),['large']);
+assert.ok(item.bodyBytes>SKILL_LOAD_LIMITS.bytes);
+const target=selectSkills('/large',resources).required[0];
+const result=(offset,part,hasMore)=>({role:'toolResult',toolName:'read_skill',content:[{type:'text',text:JSON.stringify({canonicalId:'large',path:'SKILL.md',bodyHash,skillVersion:'v1',snapshotVersion:'snapshot',offset,total:text.length,text:part,hasMore,nextOffset:hasMore?offset+part.length:null})}]});
+const first=result(0,text.slice(0,20000),true),last=result(20000,text.slice(20000),false);
+assert.equal(skillCoverage([first,last],target,'snapshot').complete,true);
+assert.equal(skillCoverage([last],target,'snapshot').complete,false);
+assert.equal(skillCoverage([first,last],target,'different').complete,false);
+assert.equal(skillCoverage([{role:'user',content:'已读完整 Skill 的摘要'}],target,'snapshot').complete,false);
+assert.equal(skillCoverage([first,result(20000,'乙'.repeat(20001),false)],target,'snapshot').complete,false);
+console.log('Skill selection: deduplication, ordinary slashes, UTF-8 budget, gaps, hashes, versions and summary rejection passed');

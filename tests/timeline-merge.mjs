@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {mergeNodes} from '../frontend/src/timelineMerge.ts';
+const a={id:'a',firstSeq:2,lastSeq:3,data:{text:'first'}};
+const b={id:'b',firstSeq:4,lastSeq:4,data:{name:'check_scene'}};
+const full={...a,lastSeq:8,data:{text:'final'}};
+const replay=mergeNodes(mergeNodes([], [a,b]),[full,b,a]);
+assert.equal(replay.length,2);assert.equal(replay[0].data.text,'final');assert.equal(replay[1].id,'b');
+const older={id:'older',firstSeq:1,lastSeq:1,data:{text:'older'}};
+assert.deepEqual(mergeNodes(replay,[older,full]).map(n=>n.id),['older','a','b']);
+console.log('Timeline final reconciliation, duplicate replay and older-page order passed');

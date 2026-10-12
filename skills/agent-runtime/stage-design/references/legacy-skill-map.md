@@ -1,0 +1,1 @@
+course-authoring/course → stage-design；slide-design/slides → slide-craft；interactive-simulation/simulation → stage-dsl references/simulation.md；narration-actions/narration → stage-dsl references/actions.md；inspection-quality/inspection → stage-design references/inspection.md；quiz-design/quiz → stage-dsl references/quiz.md。只支持明确旧路径映射。
